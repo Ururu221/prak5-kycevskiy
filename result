@@ -1,0 +1,152 @@
+//1.1
+let i = 1;
+while (i <= 100) {
+  console.log(i);
+  i++;
+}
+
+//1.2
+for (let i = 1; i <= 100; i++) {
+  console.log(i);
+}
+
+//2.1
+i = 11;
+while (i <= 33) {
+  console.log(i);
+  i++;
+}
+
+//2.2
+for (let i = 11; i <= 33; i++) {
+  console.log(i);
+}
+
+//3.1
+i = 0;
+while (i <= 100) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+  i++;
+}
+
+//3.2
+for (let i = 0; i <= 100; i += 2) {
+  console.log(i);
+}
+
+//4.1
+i = 1;
+let sum = 0;
+while (i <= 100) {
+  sum += i;
+  i++;
+}
+console.log(sum);
+
+//4.2
+let sum2 = 0;
+for (let i = 1; i <= 100; i++) {
+  sum2 += i;
+}
+console.log(sum2);
+
+//5
+let arr = [1, 2, 3, 4, 5];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+//6
+let result = 0;
+for (let i = 0; i < arr.length; i++) {
+  result += arr[i];
+}
+console.log(result);
+
+//7
+var obj = {green: 'зелений', red: 'червоний', blue: 'блакитний'};
+for (let key in obj) {
+  console.log(key + ': ' + obj[key]);
+}
+
+//8
+var obj2 = {Коля: '200', Вася: '300', Петя: '400'};
+for (let key in obj2) {
+  console.log(key + ' – заробітна плата ' + obj2[key] + ' доларів.');
+}
+
+//9
+let arr2 = [2, 5, 9, 15, 0, 4];
+for (let i = 0; i < arr2.length; i++) {
+  if (arr2[i] > 3 && arr2[i] < 10) {
+    console.log(arr2[i]);
+  }
+}
+
+//10
+let arr3 = [2, -5, 9, -15, 0, 4];
+let positiveSum = 0;
+for (let i = 0; i < arr3.length; i++) {
+  if (arr3[i] > 0) {
+    positiveSum += arr3[i];
+  }
+}
+console.log(positiveSum);
+
+//11
+let arr4 = [1, 2, 5, 9, 4, 13, 4, 10];
+for (let i = 0; i < arr4.length; i++) {
+  if (arr4[i] === 4) {
+    console.log('Є!');
+    break;
+  }
+}
+
+//12
+let arr5 = [10, 20, 30, 50, 235, 3000];
+for (let i = 0; i < arr5.length; i++) {
+  let str = arr5[i].toString();
+  if (str[0] === '1' || str[0] === '2' || str[0] === '5') {
+    console.log(arr5[i]);
+  }
+}
+
+//13
+let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let str = '-';
+for (let i = 0; i < arr6.length; i++) {
+  str += arr6[i] + '-';
+}
+console.log(str);
+
+//14
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+for (let i = 0; i < days.length; i++) {
+  if (days[i] === 'Saturday' || days[i] === 'Sunday') {
+    console.log(days[i].bold());
+  } else {
+    console.log(days[i]);
+  }
+}
+
+//15
+let day = 'Wednesday';
+for (let i = 0; i < days.length; i++) {
+  if (days[i] === day) {
+    console.log(days[i].italics());
+  } else {
+    console.log(days[i]);
+  }
+}
+
+//16
+let n = 1000;
+let num = 0;
+while (n >= 50) {
+  n = n / 2;
+  num++;
+}
+console.log(n);
+console.log(num);
